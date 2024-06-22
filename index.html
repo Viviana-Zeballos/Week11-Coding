@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Tic-Tac-Toe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .board {
+            margin-top: 20px;
+            display: inline-block;
+            border: 2px solid #000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+        }
+        .row {
+            display: flex;
+            justify-content: center; 
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #000;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body class="container"> <br>
+        <div>
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <h3 id="turn-indicator">It's X's turn!</h3>
+       <div class="container">
+        <div class="row">
+            <div class="col-4 square" id="square-1"></div>
+            <div class="col-4 square" id="square-2"></div>
+            <div class="col-4 square" id="square-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-4 square" id="square-4"></div>
+            <div class="col-4 square" id="square-5"></div>
+            <div class="col-4 square" id="square-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-4 square" id="square-7"></div>
+            <div class="col-4 square" id="square-8"></div>
+            <div class="col-4 square" id="square-9"></div>
+        </div>
+       </div> <br>
+    
+       <div id="play-again">
+        <input type="button" value="Play Again" id="playAgain" onclick="playAgain()"/>
+       </div>
+
+
+    <script src="script.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
